@@ -50,14 +50,22 @@
             <button
               class="btn btn-outline-secondary float-end"
               id="btnColor"
-              onclick="changeColorMode()"
-            >
+              onclick="changeColorMode()">
               Dark Mode
             </button>
           </h1>
           <a href="../index.html" class="btn btn-outline-secondary float-end"
-            >Home</a
-          >
+            >Home</a>
+          <div class="container mt-4">
+            <!-- Search Bar -->
+            <div class="row my-4">
+                <div class="col-md-6 offset-md-3">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search for a movie...">
+                    <button class="btn btn-primary mt-2 w-100" onclick="searchMovies()">Search</button>
+                </div>
+            </div>
+            <!-- Search Bar end-->
+        </div>
         </div>
       </div>
     </div>
@@ -81,8 +89,7 @@
           <path
             fill-rule="evenodd"
             d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
-          /></svg
-      ></a>
+          /></svg></a>
     </div>
     <!-- Back to Top Button End -->
 
@@ -132,6 +139,22 @@
       }
 
       fetchMovies();
+
+      async function searchMovies() {
+        const query = document.getElementById('searchInput').value.trim();
+        if (!query) {
+            alert("Please enter a movie title!");
+            return;
+        }
+        const searchUrl = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(query)}&language=en-US&page=1`;
+        try {
+            const response = await fetch(searchUrl);
+            const data = await response.json();
+            displayMovies(data.results);
+        } catch (error) {
+            console.error('Error searching for movies:', error);
+        }
+    }
     </script>
   </body>
 </html>
