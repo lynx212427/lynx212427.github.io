@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="parallax.css" />
+    <title> | Parallax Zone |</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="keyart" id="parallax">
+        <div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>
+        <div class="keyart_layer parallax" id="keyart-1" data-speed="15"></div>
+        <div class="keyart_layer parallax" id="keyart-2" data-speed="31"></div>
+        <div class="keyart_layer parallax" id="keyart-3" data-speed="56"></div>
+        <div class="keyart_layer parallax" id="keyart-4" data-speed="126"></div>
+        <div class="keyart_layer parallax" id="keyart-5" data-speed="186"></div>
+        <div class="keyart_layer parallax" id="keyart-6" data-speed="249"></div>
+        <div class="keyart_layer parallax" id="keyart-7" data-speed="359"></div>
+        <div class="keyart_layer parallax" id="keyart-8" data-speed="500"></div>
+		<div class="keyart_layer parallax" id="keyart-9" data-speed="300"></div>
+		<div class="keyart_layer parallax" id="keyart-10" data-speed="500"></div>
+		<div class="keyart_layer parallax" id="keyart-11" data-speed="300"></div>
+		<div class="keyart_layer parallax" id="keyart-12" data-speed="500"></div>
+        <!--Front image, in sync with scroll, no need to parallax-->
+        <!--Add or Remove layers as needed - check Parallax.css for refrence-->
+      </div>
+    </section>
+
+    <section class="main-content">
+      <div style="height: 2000px; background-color: #16202A;">
+        <div class="desc">
+          <div class="des-con">
+			<br /><br />
+            <h1>What is Parallax?</h1>
+            <p>
+              Parallax is a visual effect where the background of a web page<br />
+              appears to stay still while the foreground shifts vertically or
+              horizontally as you scroll.<br /> This creates an illusion of depth and
+              makes the website more engaging and interactive.
+            </p>
+            <p>
+              In a parallax effect, the background typically moves much more
+              slowly than the foreground,<br /> giving the impression of depth. When
+              implemented correctly,<br /> parallax scrolling produces a fascinating
+              and seamless virtual experience.
+            </p>
+            <br /><br />
+            <hr />
+            <br /><br />
+            <h1>How to Create a Parallax Effect?</h1>
+            <br /><br />
+            <p>
+              Creating a parallax effect involves manipulating CSS and
+              JavaScript<br /> to control the movement of background and foreground
+              elements.<br /> The basic idea is to set a different scrolling speed for
+              different layers of content.<br /> This can be achieved by using the
+              background-attachment <br />and background-position properties in CSS,<br />
+              along with some JavaScript for more complex interactions. For
+              instance,<br /> setting background-attachment: fixed; can make the
+              background<br /> image stay in place while the rest of the content
+              scrolls over it,<br /> creating a simple parallax effect.
+            </p>
+            <br /><br />
+            <h3>Steps to Implement Parallax</h3>
+            <p>
+              <br /><br />
+              <b
+                >To implement a parallax effect on your website, you can follow
+                these steps:</b
+              >
+
+              <br />HTML Structure: Organize your HTML with different sections
+              that will have the parallax effect.<br /> Each section can have its
+              background image and content.<br />
+              CSS Styling: Apply styles to each section. Use
+              background-attachment: fixed; for a basic parallax effect.<br /> For
+              more advanced effects, use transform and translate properties.<br />
+              JavaScript Enhancements: Use JavaScript to add more dynamic
+              effects,<br /> such as changing the speed of the background or adding
+              animations.<br /> Libraries like ScrollMagic can help simplify these
+              processes. <br />Testing and Optimization: Ensure the effect works
+              across different devices and screen sizes.<br /> Optimize images and
+              code to maintain performance.
+            </p>
+            <br /><br />
+            <hr />
+            <br /><br />
+            <h3>Practical Uses of Parallax</h3>
+            <p>
+              Parallax scrolling can be used in various ways to enhance web
+              design.<br /> It is particularly effective in storytelling,<br /> where the
+              movement of elements can guide the user through a narrative.<br /> This
+              technique is also popular in showcasing portfolios, product
+              features,<br /> and landing pages where visual impact is crucial.<br /> By
+              creating a sense of depth and motion,<br /> parallax can draw users'
+              attention to key content,<br /> making the website more interactive and
+              engaging.<br /> However, it is important to use parallax effects
+              judiciously<br /> to avoid overwhelming users or impacting website
+              performance.
+            </p>
+            <br /><br />
+            <hr />
+            <br /><br />
+            <h1>Conclusion</h1>
+            <br /><br />
+            <p>
+              Parallax scrolling is a powerful tool in web design that,<br /> when
+              used correctly, can significantly enhance user experience.<br /> It
+              leverages the natural visual phenomenon of parallax to<br /> create a
+              sense of depth and movement, making web pages more <br />engaging and
+              visually appealing. By understanding how to create<br /> and implement
+              parallax effects, designers can add a dynamic<br /> layer to their
+              websites, making them stand out. However, it's <br />essential to
+              balance creativity with usability, ensuring <br />that the effects
+              enhance rather than detract from the overall user experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Uses JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="parallax.js"></script>
+  </body>
+</html>

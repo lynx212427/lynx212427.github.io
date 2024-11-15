@@ -1,0 +1,98 @@
+/* PARALLAX.CSS */
+/*CSS created by Christopher Jay De Claro*/
+/*github.com/cjdeclaro*/
+
+/*Key Art default settings*/
+
+.keyart,
+.keyart_layer {
+	height: 1200px;
+}
+
+.keyart {
+	position: relative;
+	z-index: 10;
+	
+}
+
+.keyart_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: absolute;
+}
+
+.keyart_layer.parallax {
+	position: fixed;
+}
+
+.main-content {
+	color: white;
+	width: 100%;
+	position: absolute;
+	z-index: 200;
+	font-size: x-large;
+}
+.des-con {
+	text-align: center;
+}
+
+/*ADD OR REMOVE LAYERS AS NEEDED*/
+
+#keyart-0 {
+	background-image: url(2k_stars.jpg);
+	height: 1000px;
+}
+
+#keyart-1 {
+	background-image: url(X.png);
+	
+}
+
+#keyart-2 {
+	background-image: url(A3.png);
+}
+
+#keyart-3 {
+	background-image: url(L2.png);
+}
+
+#keyart-4 {
+	background-image: url(L1.png);
+}
+
+#keyart-5 {
+	background-image: url(A2.png);
+}
+
+#keyart-6 {
+	background-image: url(R.png);
+}
+
+#keyart-7 {
+	background-image: url(A1.png);
+}
+
+#keyart-8 {
+	background-image: url(P.png);
+}
+#keyart-9 {
+	background-image: url(Moon.png);
+	height: 1000px;
+}
+#keyart-10 {
+	background-image: url(Star\ Down.png);
+}
+#keyart-11 {
+	background-image: url(Star\ Up.png);
+	height: 1000px;
+}
+#keyart-12 {
+	background-image: url(Spaceship.png);
+}
+
+#keyart-scrim {
+	opacity: 0;
+}
+
