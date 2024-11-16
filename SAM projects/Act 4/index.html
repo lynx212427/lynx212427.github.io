@@ -106,19 +106,19 @@
     <!-- Back to Top Button End -->
 
     <script>
-      var colorMode = "light";
       function changeColorMode() {
-        if (colorMode == "light") {
-          document.getElementById("body").setAttribute("data-bs-theme", "dark");
-          document.getElementById("btnColor").innerHTML = "Light Mode";
-          colorMode = "dark";
+        const body = document.getElementById("body");
+        const btn = document.getElementById("btnColor");
+
+        if (body.getAttribute("data-bs-theme") === "light") {
+          body.setAttribute("data-bs-theme", "dark");
+          btn.innerHTML = "Light Mode";
         } else {
-          document
-            .getElementById("body")
-            .setAttribute("data-bs-theme", "light");
-          document.getElementById("btnColor").innerHTML = "Dark Mode";
-          colorMode = "light";
+          body.setAttribute("data-bs-theme", "light");
+          btn.innerHTML = "Dark Mode";
         }
+
+        fetchMovies();
       }
 
       const apiKey = "6f30e7f02a4848ce45595fe25332b2d2";
@@ -137,12 +137,19 @@
       function displayMovies(movies) {
         const moviesDiv = document.getElementById("movies");
         moviesDiv.innerHTML = "";
+
+        const isDarkMode =
+          document.getElementById("body").getAttribute("data-bs-theme") ===
+          "dark";
+
         movies.forEach((movie) => {
           const movieEl = document.createElement("div");
           movieEl.classList.add("movie-card");
 
+          const textColorClass = isDarkMode ? "text-light" : "text-dark";
+
           movieEl.innerHTML = `
-      <a href="movie.html?id=${movie.id}" class="text-decoration-none text-dark">
+      <a href="movie.html?id=${movie.id}" class="text-decoration-none ${textColorClass}">
         <img src="${imageBaseUrl}${movie.poster_path}" alt="${movie.title} Poster">
         <h2>${movie.title}</h2>
         <p>Release Date: ${movie.release_date}</p>
