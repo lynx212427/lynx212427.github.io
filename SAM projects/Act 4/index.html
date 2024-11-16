@@ -50,22 +50,34 @@
             <button
               class="btn btn-outline-secondary float-end"
               id="btnColor"
-              onclick="changeColorMode()">
+              onclick="changeColorMode()"
+            >
               Dark Mode
             </button>
           </h1>
           <a href="../index.html" class="btn btn-outline-secondary float-end"
-            >Home</a>
+            >Home</a
+          >
           <div class="container mt-4">
             <!-- Search Bar -->
             <div class="row my-4">
-                <div class="col-md-6 offset-md-3">
-                    <input type="text" id="searchInput" class="form-control" placeholder="Search for a movie...">
-                    <button class="btn btn-primary mt-2 w-100" onclick="searchMovies()">Search</button>
-                </div>
+              <div class="col-md-6 offset-md-3">
+                <input
+                  type="text"
+                  id="searchInput"
+                  class="form-control"
+                  placeholder="Search for a movie..."
+                />
+                <button
+                  class="btn btn-primary mt-2 w-100"
+                  onclick="searchMovies()"
+                >
+                  Search
+                </button>
+              </div>
             </div>
             <!-- Search Bar end-->
-        </div>
+          </div>
         </div>
       </div>
     </div>
@@ -128,12 +140,15 @@
         movies.forEach((movie) => {
           const movieEl = document.createElement("div");
           movieEl.classList.add("movie-card");
+
           movieEl.innerHTML = `
-          <img src="${imageBaseUrl}${movie.poster_path}" alt="${movie.title} Poster">
-          <h2><a href="movie.html?id=${movie.id}">${movie.title}</a></h2>
-          <p>Release Date: ${movie.release_date}</p>
-          <p>Rating: ${movie.vote_average}</p>
-        `;
+      <a href="movie.html?id=${movie.id}" class="text-decoration-none text-dark">
+        <img src="${imageBaseUrl}${movie.poster_path}" alt="${movie.title} Poster">
+        <h2>${movie.title}</h2>
+        <p>Release Date: ${movie.release_date}</p>
+        <p>Rating: ${movie.vote_average}</p>
+      </a>
+    `;
           moviesDiv.appendChild(movieEl);
         });
       }
@@ -141,20 +156,22 @@
       fetchMovies();
 
       async function searchMovies() {
-        const query = document.getElementById('searchInput').value.trim();
+        const query = document.getElementById("searchInput").value.trim();
         if (!query) {
-            alert("Please enter a movie title!");
-            return;
+          alert("Please enter a movie title!");
+          return;
         }
-        const searchUrl = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(query)}&language=en-US&page=1`;
+        const searchUrl = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(
+          query
+        )}&language=en-US&page=1`;
         try {
-            const response = await fetch(searchUrl);
-            const data = await response.json();
-            displayMovies(data.results);
+          const response = await fetch(searchUrl);
+          const data = await response.json();
+          displayMovies(data.results);
         } catch (error) {
-            console.error('Error searching for movies:', error);
+          console.error("Error searching for movies:", error);
         }
-    }
+      }
     </script>
   </body>
 </html>
