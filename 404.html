@@ -3,81 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Classroom</title>
-    <link rel="icon" href="web_icon.ico">
- <style>
-    
-body {
-margin: 0;
-padding: 0;
-background: linear-gradient(to bottom, #000428, #004e92);
-height: 100vh;
-width: 100vw;
-font-family: Roboto, Arial, sans-serif;
-color: #fff;
-text-align: center;
-}
-.not-found {
-width: 560px;
-height: 225px;
-margin-right: -10px;
-}
-.starry-sky {
-display: block;
-width: 100vw;
-height: 100vh;
-object-fit: cover;
-}
-.search-icon {
-display: inline-block;
-}
-.notfound-copy {
-color: #fff;
-position: fixed;
-top: 25px;
-right: 10%;
-text-align: right;
-}
-h1 {
-font-weight: 700;
-font-size: 40px;
-}
-a {
-font-weight: 300;
-color: #fff;
-border-bottom: 1.5px solid #5581d4;
-text-decoration: none;
-}
-a:hover {
-font-weight: 300;
-color: #fff;
-border-bottom: 2px solid #fff;
-text-decoration: none;
-}
-/* change to alternating star opacities */
-.all-stars {
-animation: blinkblink 7s linear infinite;
-}
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Profile</title>
+    <link rel="icon" href="web_icon.ico" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #000428, #004e92);
+        height: 100vh;
+        width: 100vw;
+        font-family: Roboto, Arial, sans-serif;
+        color: #fff;
+        text-align: center;
+      }
+      .not-found {
+        width: 560px;
+        height: 225px;
+        margin-right: -10px;
+      }
+      .starry-sky {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+      }
+      .search-icon {
+        display: inline-block;
+      }
+      .notfound-copy {
+        color: #fff;
+        position: fixed;
+        top: 25px;
+        right: 10%;
+        text-align: right;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 40px;
+      }
+      a {
+        font-weight: 300;
+        color: #fff;
+        border-bottom: 1.5px solid #5581d4;
+        text-decoration: none;
+      }
+      a:hover {
+        font-weight: 300;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        text-decoration: none;
+      }
+      /* change to alternating star opacities */
+      .all-stars {
+        animation: blinkblink 7s linear infinite;
+      }
 
-@keyframes blinkblink {  
-50% { opacity: 0.1; }
-}
+      @keyframes blinkblink {
+        50% {
+          opacity: 0.1;
+        }
+      }
 
-input[type=text] {
-color: #fff;
-background-color: #0a1821;
-padding:5px; 
-border: none; 
-border-bottom:2px solid #ccc; 
-font-size: 18px;
-}
-input[type=text]:focus {
-border-color:none; 
-border-bottom:2px solid #ccc;
-}
-
-
- </style>
+      input[type="text"] {
+        color: #fff;
+        background-color: #0a1821;
+        padding: 5px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        font-size: 18px;
+      }
+      input[type="text"]:focus {
+        border-color: none;
+        border-bottom: 2px solid #ccc;
+      }
+      .Backbtn {
+        border: white;
+        border-radius: 10px;
+        padding: 3px;
+        text-align: center;
+      }
+    </style>
   </head>
 
   <body>
@@ -100,9 +111,11 @@ border-bottom:2px solid #ccc;
       <h1>page not found</h1>
       <h3>
         THE PAGE YOU ARE LOOKING FOR MIGHT HAVE BEEN REMOVED HAD ITS NAME
-        CHANGED <br>OR IS TEMPORARILY UNAVAILABLE.
+        CHANGED <br />OR IS TEMPORARILY UNAVAILABLE.
       </h3>
-      
+      <a href="index.html" class="Backbtn btn btn-outline-light p-3">
+        Back to Previous Page
+      </a>
     </div>
 
     <svg aria-labelledby="Starry sky" alt="Starry sky" class="starry-sky">
@@ -190,5 +203,10 @@ border-bottom:2px solid #ccc;
         </g>
       </g>
     </svg>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
