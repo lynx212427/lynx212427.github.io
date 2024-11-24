@@ -1,5 +1,15 @@
 /*PUT YOUR CUSTOM STYLE HERE*/
-
+.Backbtn {
+	text-align: center;
+	align-items: center;
+	align-content: center;
+}
+.BTbtn {
+	position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
 /*!This style is important, do not override!*/
 * {
 	margin: 0;
