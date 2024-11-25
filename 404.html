@@ -160,6 +160,40 @@
       </a>
     </div>
     <div id="svg-container"></div>
+    <!--Digital Clock-->
+  <div class="container my-3">
+    <h3 id="digital-clock"></h3>
+  </div>
+  <!--Digital Clock end-->
+  <script>
+    function updateClock() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes().toString().padStart(2, '0');
+      var seconds = now.getSeconds().toString().padStart(2, '0');
+      var period = "AM";
+      if (hours >= 12) {
+        period = "PM";
+        if (hours > 12) hours -= 12;
+      } else if (hours === 0) {
+        hours = 12;
+      }
+      var timeString = hours + ":" + minutes + ":" + seconds + " " + period;
+
+      var dateString = now.toLocaleDateString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+
+      document.getElementById("digital-clock").textContent = dateString + " " + timeString;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+  <!--Digital Clock end-->
     <script>
         const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         svg.setAttribute("aria-labelledby", "Starry sky");
