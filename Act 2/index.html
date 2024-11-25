@@ -381,6 +381,7 @@
   <hr />
   <br />
   <!--Best time to visit-->
+  <hr>
   <!--Digital Clock-->
   <div class="container my-3">
     <h3 id="digital-clock"></h3>
@@ -415,6 +416,25 @@
     updateClock();
   </script>
   <!--Digital Clock end-->
+  <hr>
+  <!--7days Weather Widget-->
+  <a class="weatherwidget-io" href="https://forecast7.com/en/13d76121d06/batangas/" data-label_1="TANAUAN"
+    data-label_2="BATANGAS" data-font="Roboto" data-icons="Climacons Animated" data-theme="pure"
+    data-basecolor="#000000" data-accent="" data-textcolor="#ffffff" data-highcolor="#ffffff" data-lowcolor="#ffffff"
+    data-suncolor="#ffffff" data-mooncolor="#ffffff" data-cloudcolor="#ffffff" data-cloudfill="#000000"
+    data-raincolor="#ffffff" data-snowcolor="#ffffff">TANAUAN BATANGAS</a>
+  <script>
+    ! function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }(document, 'script', 'weatherwidget-io-js');
+  </script>
+  <!--7days Weather Widget end-->
   <!-- Back to Top Button -->
   <div class="BTbtn sticky-bottom float-end p-3">
     <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
