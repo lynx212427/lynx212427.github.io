@@ -24,7 +24,7 @@ body {
 }
 
 .img-w {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 #front {
@@ -242,8 +242,8 @@ p {
   justify-content: center;
 }
 #me {
-  border-radius: 50%;
-  width: 30vb;
+  border-radius: 75px;
+  width: 10vb;
   margin: auto;
 }
 footer {
