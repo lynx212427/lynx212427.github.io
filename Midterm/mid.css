@@ -42,3 +42,24 @@ body {
     transform: scale(1.1);
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.8);
 }
+/*css in html*/
+.movie-details {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.movie-details img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.movie-details h2 {
+    margin-top: 20px;
+}
+
+.movie-details p {
+    font-size: 1.2rem;
+}
+/*css in html*/
