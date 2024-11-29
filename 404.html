@@ -10,146 +10,14 @@
       crossorigin="anonymous"
     />
     <title>Profile</title>
-    <link rel="icon" href="web_icon.ico" />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(to bottom, #000428, #004e92);
-        height: 100vh;
-        width: 100vw;
-        font-family: Roboto, Arial, sans-serif;
-        color: #fff;
-        text-align: center;
-        overflow: hidden;
-      }
-      .not-found {
-        width: 560px;
-        height: auto;
-        margin-right: -10px;
-      }
-      .starry-sky {
-        display: block;
-        width: 100vw;
-        height: 100vh;
-        z-index: -1;
-        object-fit: cover;
-      }
-      .search-icon {
-        display: inline-block;
-      }
-      .notfound-copy {
-        color: #fff;
-        position: fixed;
-        top: 25px;
-        right: 10%;
-        text-align: right;
-      }
-      h1 {
-        font-weight: 700;
-        font-size: 90px;
-      }
-      a {
-        font-weight: 300;
-        color: #fff;
-        border-bottom: 1.5px solid #5581d4;
-        text-decoration: none;
-      }
-      a:hover {
-        font-weight: 300;
-        color: #fff;
-        border-bottom: 2px solid #fff;
-        text-decoration: none;
-      }
-      .all-stars {
-        animation: blinkblink 7s linear infinite;
-      }
-
-      @keyframes blinkblink {
-        50% {
-          opacity: 0.1;
-        }
-      }
-
-      input[type="text"] {
-        color: #fff;
-        background-color: #0a1821;
-        padding: 5px;
-        border: none;
-        border-bottom: 2px solid #ccc;
-        font-size: 18px;
-      }
-      input[type="text"]:focus {
-        border-color: none;
-        border-bottom: 2px solid #ccc;
-      }
-      .Backbtn {
-        border: white;
-        border-radius: 10px;
-        padding: 3px;
-        text-align: center;
-      }
-    .all-stars path {
-      animation: blink 1.5s infinite alternate ease-in-out;
-    }
-    .stars-one {
-      animation-delay: 0.2s;
-    }
-    .stars-two {
-      animation-delay: 0.5s;
-    }
-    .stars-three {
-      animation-delay: 0.7s;
-    }
-    .stars-four {
-      animation-delay: 0.9s;
-    }
-    .stars-five {
-      animation-delay: 0.3s;
-    }
-    .stars-six {
-      animation-delay: 0.4s;
-    }
-    @keyframes blink {
-      0% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0.3;
-      }
-    }
-@media (max-width: 768px) {
-  body {
-    height: auto; 
-    overflow-y: auto;
-  }
-
-  .notfound-copy {
-    position: static;
-    margin: 20px;
-  }
-
-  .not-found {
-    width: 100%; 
-    height: auto;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 16px; 
-  }
-}
-
-    </style>
+    <link rel="icon" href="../lynx212427.github.io/assets/web_icon.ico" />
+    <link rel="stylesheet" href="../lynx212427.github.io/assets/404.css">
   </head>
 
   <body>
     <div class="notfound-copy">
-        <img src="404.png" alt="404">
-        <img src="moon.png" alt="Moon">
+        <img src="../lynx212427.github.io/assets/404.png" alt="404">
+        <img src="../lynx212427.github.io/assets/moon.png" alt="Moon">
       <h1>page not found</h1>
       <h3>
         THE PAGE YOU ARE LOOKING FOR MIGHT HAVE BEEN REMOVED HAD ITS NAME
@@ -160,95 +28,16 @@
       </a>
     </div>
     <div id="svg-container"></div>
-    <!--Digital Clock-->
-  <div class="container my-3">
-    <h3 id="digital-clock"></h3>
-  </div>
-  <!--Digital Clock end-->
-  <script>
-    function updateClock() {
-      var now = new Date();
-      var hours = now.getHours();
-      var minutes = now.getMinutes().toString().padStart(2, '0');
-      var seconds = now.getSeconds().toString().padStart(2, '0');
-      var period = "AM";
-      if (hours >= 12) {
-        period = "PM";
-        if (hours > 12) hours -= 12;
-      } else if (hours === 0) {
-        hours = 12;
-      }
-      var timeString = hours + ":" + minutes + ":" + seconds + " " + period;
-
-      var dateString = now.toLocaleDateString('en-US', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      });
-
-      document.getElementById("digital-clock").textContent = dateString + " " + timeString;
-    }
-
-    setInterval(updateClock, 1000);
-    updateClock();
-  </script>
-  <!--Digital Clock end-->
     <script>
-        const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        svg.setAttribute("aria-labelledby", "Starry sky");
-        svg.setAttribute("alt", "Starry sky");
-        svg.setAttribute("class", "starry-sky");
-        svg.setAttribute("viewBox", "0 0 800 600");
-        svg.innerHTML = `
-          <title id="svgtitle2">Starry sky</title>
-          <!-- STARS START -->
-          <g class="all-stars" fill="#F6F5BC">
-            <path
-              class="stars-one"
-              d="M580.9 151.5c-.3-.3-.6-.4-1-.4s-.7.1-1 .4c-1.6 4.9-6.2 6.2-6.2 6.2-.3.3-.4.6-.4 1s.1.7.4 1c4.9 1.6 6.2 6.2 6.2 6.2.3.3.6.4 1 .4s.7-.1 1-.4c1.6-4.9 6.2-6.2 6.2-6.2.3-.3.4-.6.4-1s-.1-.7-.4-1c-5-1.7-6.2-6.2-6.2-6.2zM93.6"
-            />
-            <path
-              class="stars-two"
-              d="M150 540.6c-4.9-1.6-6.2-6.2-6.2-6.2-.3-.3-.6-.4-1-.4s-.7.1-1 .4c-1.6 4.9-6.2 6.2-6.2 6.2-.3.3-.4.6-.4 1s.1.7.4 1c4.9 1.6 6.2 6.2 6.2 6.2.3.3.6.4 1 .4s.7-.1 1-.4c1.6-4.9 6.2-6.2 6.2-6.2.3-.3.4-.6.4-1s-.1-.8-.4-1zM526.3 551.7c-.3-.3-.6-.4-1-.4s-.7.1-1 .4c-1.6 4.9-6.2 6.2-6.2 6.2-.3.3-.4.6-.4 1s.1.7.4 1c4.9 1.6 6.2 6.2 6.2 6.2.3.3.6.4 1 .4s.7-.1 1-.4c1.6-4.9 6.2-6.2 6.2-6.2.3-.3.4-.6.4-1s-.1-.7-.4-1c-5-1.7-6.2-6.2-6.2-6.2zM617.4 291.9c-.3-.3-.6-.4-1-.4s-.7.1-1 .4c-1.6 4.9-6.2 6.2-6.2 6.2-.3.3-.4.6-.4 1s.1.7.4 1c4.9 1.6 6.2 6.2 6.2 6.2.3.3.6.4 1 .4s.7-.1 1-.4c1.6-4.9 6.2-6.2 6.2-6.2.3-.3.4-.6.4-1s-.1-.7-.4-1c-5-1.6-6.2-6.2-6.2-6.2z"
-            />
-            <path
-              class="stars-three"
-              d="M259.9 320.5c-.3-.3-.6-.4-1-.4s-.7.1-1 .4c-1.6 4.9-6.2 6.2-6.2 6.2-.3.3-.4.6-.4 1s.1.7.4 1c4.9 1.6 6.2 6.2 6.2 6.2.3.3.6.4 1 .4s.7-.1 1-.4c1.6-4.9 6.2-6.2 6.2-6.2.3-.3.4-.6.4-1s-.1-.7-.4-1c-5-1.7-6.2-6.2-6.2-6.2zM93.6"
-            />
-            <path
-              class="stars-four"
-              d="M130.9 240.6c-4.9-1.6-6.2-6.2-6.2-6.2-.3-.3-.6-.4-1-.4s-.7.1-1 .4c-1.6 4.9-6.2 6.2-6.2 6.2-.3.3-.4.6-.4 1s.1.7.4 1c4.9 1.6 6.2 6.2 6.2 6.2.3.3.6.4 1 .4s.7-.1 1-.4c1.6-4.9 6.2-6.2 6.2-6.2.3-.3.4-.6.4-1s-.1-.8-.4-1zM526.3 551.7c-.3-.3-.6-.4-1-.4s-.7.1-1 .4c-1.6 4.9-6.2 6.2-6.2 6.2-.3.3-.4.6-.4 1s.1.7.4 1c4.9 1.6 6.2 6.2 6.2 6.2.3.3.6.4 1 .4s.7-.1 1-.4c1.6-4.9 6.2-6.2 6.2-6.2.3-.3.4-.6.4-1s-.1-.7-.4-1c-5-1.7-6.2-6.2-6.2-6.2zM617.4 291.9c-.3-.3-.6-.4-1-.4s-.7.1-1 .4c-1.6 4.9-6.2 6.2-6.2 6.2-.3.3-.4.6-.4 1s.1.7.4 1c4.9 1.6 6.2 6.2 6.2 6.2.3.3.6.4 1 .4s.7-.1 1-.4c1.6-4.9 6.2-6.2 6.2-6.2.3-.3.4-.6.4-1s-.1-.7-.4-1c-5-1.6-6.2-6.2-6.2-6.2z"
-            />
-             <path
-              class="stars-five"
-              d="M129 30.5c-.3-.3-.6-.4-1-.4s-.7.1-1 .4c-1.6 4.9-6.2 6.2-6.2 6.2-.3.3-.4.6-.4 1s.1.7.4 1c4.9 1.6 6.2 6.2 6.2 6.2.3.3.6.4 1 .4s.7-.1 1-.4c1.6-4.9 6.2-6.2 6.2-6.2.3-.3.4-.6.4-1s-.1-.7-.4-1c-5-1.7-6.2-6.2-6.2-6.2zM93.6"
-            />
-            <path
-              class="stars-six"
-              d="M1 50.5c-.3-.3-.6-.4-1-.4s-.7.1-1 .4c-1.6 4.9-6.2 6.2-6.2 6.2-.3.3-.4.6-.4 1s.1.7.4 1c4.9 1.6 6.2 6.2 6.2 6.2.3.3.6.4 1 .4s.7-.1 1-.4c1.6-4.9 6.2-6.2 6.2-6.2.3-.3.4-.6.4-1s-.1-.7-.4-1c-5-1.7-6.2-6.2-6.2-6.2zM93.6"
-            />
-          </g>
-          <!-- STARS END -->
-        `;
-        document.getElementById("svg-container").appendChild(svg);
+       //stars
       </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function adjustScroll() {
-        const body = document.body;
-        if (window.innerWidth <= 800) {
-          body.style.overflowY = "scroll"; 
-        } else {
-          body.style.overflow = "hidden";
-        }
-      }
-      adjustScroll();
-      window.addEventListener("resize", adjustScroll);
+    <script src="../lynx212427.github.io/assets/404.js">
+     //scroll
     </script>
   </body>
 </html>
