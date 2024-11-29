@@ -242,8 +242,8 @@ p {
   justify-content: center;
 }
 #me {
-  border-radius: 75px;
-  width: 10vb;
+  border-radius: 100px;
+  width: 20vb;
   margin: auto;
 }
 footer {
