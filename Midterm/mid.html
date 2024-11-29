@@ -1,219 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Part 1</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="mid.css">
-    <link rel="icon" href="web_icon.ico">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="mid.css" />
+    <link rel="icon" href="web_icon.ico" />
+  </head>
 
-<body>
+  <body>
     <!--Baymax-->
     <div class="container text-center py-5">
-        <a href="../index.html" class="btn btn-outline-light float-end">Back</a>
-        <!-- Video Section -->
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                <h1 class="mb-3">Big Hero 6 (2014)</h1>
-                <div class="video-wrapper">
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/ag0tATDaAbE?si=CU94JcRQu4nFh6iQ&amp;controls=0&amp;start=10"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+      <a href="../index.html" class="btn btn-outline-light float-end">Back</a>
+      <!-- Video Section -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+          <h1 class="mb-3">Big Hero 6 (2014)</h1>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/videoseries?si=yuCKdIeBVMeif7R_&list=PLmQMtZKG-WvYCY_GA96yKrkQ4PO-0Sijv&rel=0&controls=0&disablekb=1&mute=0&autoplay=1&loop=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-        <!-- Video Section end-->
-        <!-- Picture & 3D Section -->
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <h1 class="mb-3">Baymax</h1>
-                <div class="picture-wrapper">
-                    <img src="https://w7.pngwing.com/pngs/777/883/png-transparent-baymax-hiro-hamada-tadashi-hamada-the-walt-disney-company-disney-fairies-others-superhero-bird-film-thumbnail.png"
-                        alt="Baymax & Hiro" class="img-fluid">
-                    <div class="sketchfab-embed-wrapper"> <iframe title="BayMax" frameborder="0" allowfullscreen
-                            mozallowfullscreen="true" webkitallowfullscreen="true"
-                            allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
-                            execution-while-out-of-viewport execution-while-not-rendered web-share
-                            src="https://sketchfab.com/models/2194769176d64d589482203ae3212cc7/embed?ui_theme=dark">
-                        </iframe>
-                    </div>
-                    <img src="https://i.pinimg.com/736x/09/9f/e7/099fe7a4610faccfc3ae8ef0c3dc7746.jpg"
-                        alt="Baymax holding glowing blue moon" class="img-fluid">
-                </div>
+      </div>
+      <!-- Video Section end-->
+      <!-- Picture & 3D Section -->
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <h1 class="mb-3">Baymax</h1>
+          <div class="picture-wrapper">
+            <img
+              src="https://w7.pngwing.com/pngs/777/883/png-transparent-baymax-hiro-hamada-tadashi-hamada-the-walt-disney-company-disney-fairies-others-superhero-bird-film-thumbnail.png"
+              alt="Baymax & Hiro"
+              class="img-fluid"
+            />
+            <div class="sketchfab-embed-wrapper">
+              <iframe
+                title="BayMax"
+                frameborder="0"
+                allowfullscreen
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                xr-spatial-tracking
+                execution-while-out-of-viewport
+                execution-while-not-rendered
+                web-share
+                src="https://sketchfab.com/models/2194769176d64d589482203ae3212cc7/embed?ui_theme=dark"
+              >
+              </iframe>
             </div>
+            <img
+              src="https://i.pinimg.com/736x/09/9f/e7/099fe7a4610faccfc3ae8ef0c3dc7746.jpg"
+              alt="Baymax holding glowing blue moon"
+              class="img-fluid"
+            />
+          </div>
         </div>
-        <!-- Picture & 3D Section end-->
-        <hr class="line my-5">
-        <div class="container">
-            <div class="row mt-5 position-relative">
-                <div class="col sticky-top">
-                    <h1>Movie Details</h1>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div id="movieDetails" class="movie-section"></div>
-            </div>
+      </div>
+      <!-- Picture & 3D Section end-->
+      <hr class="line my-5" />
+      <div class="container">
+        <div class="row mt-5 position-relative">
+          <div class="col sticky-top">
+            <h1>Movie Details</h1>
+          </div>
         </div>
+        <div class="row mt-5">
+          <div id="movieDetails" class="movie-section"></div>
+        </div>
+      </div>
     </div>
     <!--Baymax end-->
-    <hr class="line my-5">
+    <hr class="line my-5" />
     <!--Groot-->
     <div class="container text-center py-5">
-        <h1 class="mb-3">Groot Series</h1>
-        <hr class="line my-5">
-        <!-- Video Section -->
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                <h1 class="mb-3">I am Groot Season 1 All Episode</h1>
-                <h3 class="mb-3">Ep1: Groot's First Steps</h3>
-                <h3 class="mb-3">Ep2: The Little Guy</h3>
-                <h3 class="mb-3">Ep3: Groot Pursuit</h3>
-                <h3 class="mb-3">Ep4: Groot Takes a Bath</h3>
-                <h3 class="mb-3">Ep5: Magnum Opus</h3>
-                <div class="video-wrapper">
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/_6Ld6NP8yXU?si=W5xd50QUOHhaEXcL&amp;controls=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+      <h1 class="mb-3">Groot Series</h1>
+      <hr class="line my-5" />
+      <!-- Video Section -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+          <h1 class="mb-3">I am Groot Season 1 All Episode</h1>
+          <h3 class="mb-3">Ep1: Groot's First Steps</h3>
+          <h3 class="mb-3">Ep2: The Little Guy</h3>
+          <h3 class="mb-3">Ep3: Groot Pursuit</h3>
+          <h3 class="mb-3">Ep4: Groot Takes a Bath</h3>
+          <h3 class="mb-3">Ep5: Magnum Opus</h3>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/_6Ld6NP8yXU?si=W5xd50QUOHhaEXcL&rel=0&controls=0&disablekb=1&mute=0&autoplay=1&loop=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-        <!-- Video Section end-->
-        <!-- Picture & 3D Section -->
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <h1 class="mb-3">Groot</h1>
-                <div class="picture-wrapper">
-                    <img src="https://i.pinimg.com/236x/b9/57/88/b95788f1f9de639260d0211267658334.jpg"
-                        alt="Gradient Side Groot" class="img-fluid">
-                    <img src="https://preview.redd.it/mam1fjoilpt61.jpg?auto=webp&s=6011f1b01771be4aacaa9aaef13678439a1e61bf"
-                        alt="I am Groot" class="img-fluid">
-                    <img src="https://i.pinimg.com/736x/39/48/4a/39484aba1774494673a35bcc0bc7c4a2.jpg" alt="Groot"
-                        class="img-fluid">
-                    <img src="https://i.pinimg.com/736x/dd/67/b3/dd67b33c4fc7901fbe889760e13a7fcf.jpg"
-                        alt="Groot in the Rain" class="img-fluid">
-                </div>
-            </div>
+      </div>
+      <!-- Video Section end-->
+      <!-- Picture & 3D Section -->
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <h1 class="mb-3">Groot</h1>
+          <div class="picture-wrapper">
+            <img
+              src="https://i.pinimg.com/236x/b9/57/88/b95788f1f9de639260d0211267658334.jpg"
+              alt="Gradient Side Groot"
+              class="img-fluid"
+            />
+            <img
+              src="https://preview.redd.it/mam1fjoilpt61.jpg?auto=webp&s=6011f1b01771be4aacaa9aaef13678439a1e61bf"
+              alt="I am Groot"
+              class="img-fluid"
+            />
+            <img
+              src="https://i.pinimg.com/736x/39/48/4a/39484aba1774494673a35bcc0bc7c4a2.jpg"
+              alt="Groot"
+              class="img-fluid"
+            />
+            <img
+              src="https://i.pinimg.com/736x/dd/67/b3/dd67b33c4fc7901fbe889760e13a7fcf.jpg"
+              alt="Groot in the Rain"
+              class="img-fluid"
+            />
+          </div>
         </div>
-        <!-- Picture & 3D Section end-->
-        <hr class="line my-5">
-        <div class="container">
-            <div class="row mt-5 position-relative">
-                <div class="col sticky-top">
-                    <h1>Movie Details</h1>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div id="grootSeries" class="movie-section"></div>
-            </div>
+      </div>
+      <!-- Picture & 3D Section end-->
+      <hr class="line my-5" />
+      <div class="container">
+        <div class="row mt-5 position-relative">
+          <div class="col sticky-top">
+            <h1>Movie Details</h1>
+          </div>
         </div>
+        <div class="row mt-5">
+          <div id="grootSeries" class="movie-section"></div>
+        </div>
+      </div>
     </div>
-    <hr class="line my-5">
+    <hr class="line my-5" />
     <!--Groot end-->
     <!--Groot 2-->
     <div class="container text-center py-5">
-        <!-- Video Section -->
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                <h1 class="mb-3">I am Groot Season 2 Ep1</h1>
-                <h3 class="mb-3">Are You My Groot</h3>
-                <div class="video-wrapper">
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/Qu9Tyj3P_dQ?si=uTVoc9BEpLXlOvte&amp;controls=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+      <!-- Video Section -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+          <h1 class="mb-3">I am Groot Season 2 Ep1</h1>
+          <h3 class="mb-3">Are You My Groot</h3>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Qu9Tyj3P_dQ?si=uTVoc9BEpLXlOvte&rel=0&controls=0&disablekb=1&mute=0&autoplay=1&loop=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                <h1 class="mb-3">I am Groot Season 2 Ep2</h1>
-                <h3 class="mb-3">Groot Noses Around</h3>
-                <div class="video-wrapper">
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/UTwKF7iqiPs?si=9I2QBdUTT_7zoWEO&amp;controls=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+          <h1 class="mb-3">I am Groot Season 2 Ep2</h1>
+          <h3 class="mb-3">Groot Noses Around</h3>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/UTwKF7iqiPs?si=9I2QBdUTT_7zoWEO&rel=0&controls=0&disablekb=1&mute=0&autoplay=1&loop=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                <h1 class="mb-3">I am Groot Season 2 Ep3</h1>
-                <h3 class="mb-3">Groot's Snow Day</h3>
-                <div class="video-wrapper">
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/8akr6_oQTV4?si=Q3t8_ZIq_maFucJe&amp;controls=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+          <h1 class="mb-3">I am Groot Season 2 Ep3</h1>
+          <h3 class="mb-3">Groot's Snow Day</h3>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/8akr6_oQTV4?si=Q3t8_ZIq_maFucJe&rel=0&controls=0&disablekb=1&mute=0&autoplay=1&loop=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                <h1 class="mb-3">I am Groot Season 2 Ep4</h1>
-                <h3 class="mb-3">Groot Sweet Treat</h3>
-                <div class="video-wrapper">
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/el2Ta39jbow?si=aKGn5oWJ6NDNbf6y&amp;controls=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+          <h1 class="mb-3">I am Groot Season 2 Ep4</h1>
+          <h3 class="mb-3">Groot Sweet Treat</h3>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/el2Ta39jbow?si=aKGn5oWJ6NDNbf6y&rel=0&controls=0&disablekb=1&mute=0&autoplay=1&loop=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                <h1 class="mb-3">I am Groot Season 2 Ep5</h1>
-                <h3 class="mb-3">Groot and the Great Prophecy</h3>
-                <div class="video-wrapper">
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/igK2C9aNkeY?si=jt4hL4Mh0uZMtAsE&amp;controls=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+          <h1 class="mb-3">I am Groot Season 2 Ep5</h1>
+          <h3 class="mb-3">Groot and the Great Prophecy</h3>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/igK2C9aNkeY?si=jt4hL4Mh0uZMtAsE&rel=0&controls=0&disablekb=1&mute=0&autoplay=1&loop=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
-        <!-- Video Section end-->
+      </div>
+      <!-- Video Section end-->
     </div>
-    <hr class="line my-5">
+    <hr class="line my-5" />
     <!--Groot 2 end-->
     <!--Digital Clock-->
     <div class="container my-3 text-center">
-        <h3 id="digital-clock"></h3>
+      <h3 id="digital-clock"></h3>
     </div>
     <!--Digital Clock end-->
-    <hr>
+    <hr />
     <!--7days Weather Widget-->
-    <a class="weatherwidget-io" href="https://forecast7.com/en/13d76121d06/batangas/" data-label_1="TANAUAN"
-        data-label_2="BATANGAS" data-font="Roboto" data-icons="Climacons Animated" data-theme="pure"
-        data-basecolor="#000000" data-accent="" data-textcolor="#ffffff" data-highcolor="#ffffff"
-        data-lowcolor="#ffffff" data-suncolor="#ffffff" data-mooncolor="#ffffff" data-cloudcolor="#ffffff"
-        data-cloudfill="#000000" data-raincolor="#ffffff" data-snowcolor="#ffffff">TANAUAN BATANGAS</a>
+    <a
+      class="weatherwidget-io"
+      href="https://forecast7.com/en/13d76121d06/batangas/"
+      data-label_1="TANAUAN"
+      data-label_2="BATANGAS"
+      data-font="Roboto"
+      data-icons="Climacons Animated"
+      data-theme="pure"
+      data-basecolor="#000000"
+      data-accent=""
+      data-textcolor="#ffffff"
+      data-highcolor="#ffffff"
+      data-lowcolor="#ffffff"
+      data-suncolor="#ffffff"
+      data-mooncolor="#ffffff"
+      data-cloudcolor="#ffffff"
+      data-cloudfill="#000000"
+      data-raincolor="#ffffff"
+      data-snowcolor="#ffffff"
+      >TANAUAN BATANGAS</a
+    >
     <!--7days Weather Widget end-->
     <!-- Back to Top Button -->
     <div class="BTbtn sticky-bottom float-end p-3">
-        <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-arrow-up-circle"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
-            </svg>
-        </a>
+      <a href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="black"
+          class="bi bi-arrow-up-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+          />
+        </svg>
+      </a>
     </div>
     <!-- Back to Top Button End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="mid.js"></script>
-</body>
-
+  </body>
 </html>
