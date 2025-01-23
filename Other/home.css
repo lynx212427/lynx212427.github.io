@@ -11,3 +11,24 @@ main {
     background-color: #FFB114;
     height: 50px;
 }
+body {
+    padding-top: 56px; 
+  }
+  
+.hero-card {
+    background-color: #0078D0;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    aspect-ratio: 16 / 9;
+}
+.hero-card a h1 {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero-card a:hover h1 {
+    color: #FFB114; 
+  }
+  
