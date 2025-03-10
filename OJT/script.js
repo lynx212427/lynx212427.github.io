@@ -58,3 +58,28 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 .then(response => response.text())
 .then(data => console.log(data));
+
+
+
+
+function doGet(e) {
+  const selectedDate = e.parameter.date;
+  const sheet = SpreadsheetApp.openById('AKfycbwornPVRDPWUwpwBOaRdwD_EklmWliOJvJkMjII_89a4SG4E91-fNbKIdoTT63nrs8t2w')
+    .getSheetByName('Sheet1');
+  const data = sheet.getDataRange().getValues();
+
+  
+  const matchingRows = [];
+  for (let i = 1; i < data.length; i++) {
+    const rowDate = data[i][0]; 
+    if (rowDate === selectedDate) {
+      matchingRows.push({
+        date: rowDate,
+        otherColumn: data[i][1] 
+      });
+    }
+  }
+
+  return ContentService.createTextOutput(JSON.stringify(matchingRows))
+    .setMimeType(ContentService.MimeType.JSON);
+}

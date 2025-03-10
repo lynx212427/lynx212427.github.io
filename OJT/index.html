@@ -16,6 +16,38 @@
       <textarea id="note-text" placeholder="Enter your note..."></textarea>
       <button id="save-note">Save Note</button>
     </div>
+
+    
+<input type="date" id="datePicker">
+<button onclick="fetchData()">Show Data</button>
+
+
+<div id="dataDisplay"></div>
+
+<script>
+async function fetchData() {
+  const selectedDate = document.getElementById('datePicker').value;
+  const displayDiv = document.getElementById('dataDisplay');
+
+  try {
+    const response = await fetch('YOUR_BACKEND_ENDPOINT?date=' + selectedDate);
+    const data = await response.json();
+
+    
+    if (data.length > 0) {
+      displayDiv.innerHTML = data.map(row => `
+        <p>Date: ${row.date}, Data: ${row.otherColumn}</p>
+      `).join('');
+    } else {
+      displayDiv.innerHTML = "No data found for this date.";
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    displayDiv.innerHTML = "Failed to fetch data.";
+  }
+}
+</script>
+
   </div>
   <script src="script.js"></script>
 </body>
